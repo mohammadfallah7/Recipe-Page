@@ -1,0 +1,196 @@
+@use "base";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: base.$outfit;
+}
+
+body {
+  @include base.md {
+    background-color: lighten($color: base.$dark-raspberry, $amount: 63%);
+  }
+}
+
+#application {
+  width: 100%;
+  max-width: base.$screen-md;
+  display: flex;
+  flex-direction: column;
+
+  @include base.md {
+    padding: 1.5rem 0 0 0;
+    border-radius: 0.75rem;
+    background-color: base.$white;
+    margin: 4rem auto;
+  }
+}
+
+.omelette-picture {
+  align-self: center;
+
+  @include base.md {
+    padding: 0 1.5rem;
+  }
+
+  img {
+    @include base.md {
+      border-radius: 0.75rem;
+    }
+  }
+}
+
+.information {
+  padding: 1rem 1.5rem;
+
+  &__title {
+    font-family: base.$young;
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+
+  &__description {
+    color: base.$wenge-brown;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__preparation {
+    background-color: lighten($color: base.$dark-raspberry, $amount: 63%);
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+
+    &__title {
+      color: base.$dark-raspberry;
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    &__list {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      color: base.$wenge-brown;
+
+      ::marker {
+        color: base.$dark-raspberry;
+        font-size: 0.75rem;
+      }
+
+      &__item {
+        padding-left: 0.75rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+        font-size: 1.05rem;
+      }
+    }
+  }
+}
+
+.ingredient {
+  padding: 1rem 1.5rem;
+
+  &__title {
+    font-family: base.$young;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: base.$nutmeg;
+  }
+
+  &__list {
+    list-style-type: disc;
+    color: base.$wenge-brown;
+    padding-left: 1.75rem;
+
+    ::marker {
+      color: base.$nutmeg;
+      font-size: 0.75rem;
+    }
+
+    &__item {
+      font-size: 1.05rem;
+      padding-left: 0.75rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+.instruction {
+  padding: 1rem 1.5rem;
+
+  &__title {
+    font-family: base.$young;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: base.$nutmeg;
+  }
+
+  &__list {
+    list-style-type: decimal;
+    color: base.$wenge-brown;
+    padding-left: 1.75rem;
+
+    ::marker {
+      color: base.$nutmeg;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    &__item {
+      padding-left: 0.75rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+.nutrition {
+  padding: 1rem 1.5rem;
+
+  &__title {
+    font-family: base.$young;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: base.$nutmeg;
+  }
+
+  &__description {
+    color: base.$wenge-brown;
+    margin: 1rem 0;
+  }
+
+  &__list {
+    &__item {
+      position: relative;
+      padding: 0.75rem 1.5rem;
+
+      span {
+        color: base.$wenge-brown;
+      }
+
+      strong {
+        position: absolute;
+        color: base.$nutmeg;
+        left: 45%;
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  font-size: 0.75rem;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+
+  a {
+    text-decoration: underline;
+    color: base.$dark-raspberry;
+  }
+}

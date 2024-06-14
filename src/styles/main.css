@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "Young";
+  src: url(../../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url(../../assets/fonts/outfit/static/Outfit-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url(../../assets/fonts/outfit/static/Outfit-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url(../../assets/fonts/outfit/static/Outfit-Bold.ttf);
+  font-weight: 700;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: "Outfit";
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #f9ecf2;
+  }
+}
+
+#application {
+  width: 100%;
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  #application {
+    padding: 1.5rem 0 0 0;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    margin: 4rem auto;
+  }
+}
+
+.omelette-picture {
+  align-self: center;
+}
+@media screen and (min-width: 768px) {
+  .omelette-picture {
+    padding: 0 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .omelette-picture img {
+    border-radius: 0.75rem;
+  }
+}
+
+.information {
+  padding: 1rem 1.5rem;
+}
+.information__title {
+  font-family: "Young";
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+.information__description {
+  color: #5f574e;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.information__preparation {
+  background-color: #f9ecf2;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+}
+.information__preparation__title {
+  color: #7b284f;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+.information__preparation__list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #5f574e;
+}
+.information__preparation__list ::marker {
+  color: #7b284f;
+  font-size: 0.75rem;
+}
+.information__preparation__list__item {
+  padding-left: 0.75rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.ingredient {
+  padding: 1rem 1.5rem;
+}
+.ingredient__title {
+  font-family: "Young";
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #854632;
+}
+.ingredient__list {
+  list-style-type: disc;
+  color: #5f574e;
+  padding-left: 1.75rem;
+}
+.ingredient__list ::marker {
+  color: #854632;
+  font-size: 0.75rem;
+}
+.ingredient__list__item {
+  font-size: 1.05rem;
+  padding-left: 0.75rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.instruction {
+  padding: 1rem 1.5rem;
+}
+.instruction__title {
+  font-family: "Young";
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #854632;
+}
+.instruction__list {
+  list-style-type: decimal;
+  color: #5f574e;
+  padding-left: 1.75rem;
+}
+.instruction__list ::marker {
+  color: #854632;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.instruction__list__item {
+  padding-left: 0.75rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.nutrition {
+  padding: 1rem 1.5rem;
+}
+.nutrition__title {
+  font-family: "Young";
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #854632;
+}
+.nutrition__description {
+  color: #5f574e;
+  margin: 1rem 0;
+}
+.nutrition__list__item {
+  position: relative;
+  padding: 0.75rem 1.5rem;
+}
+.nutrition__list__item span {
+  color: #5f574e;
+}
+.nutrition__list__item strong {
+  position: absolute;
+  color: #854632;
+  left: 45%;
+}
+
+.footer {
+  display: flex;
+  font-size: 0.75rem;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+.footer a {
+  text-decoration: underline;
+  color: #7b284f;
+}
+
+/*# sourceMappingURL=main.css.map */

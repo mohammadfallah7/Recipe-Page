@@ -1,0 +1,49 @@
+// Colors
+$nutmeg: #854632;
+$dark-raspberry: #7b284f;
+$white: #ffffff;
+$rose-white: #fff5fa;
+$eggshell: #f3e6d8;
+$light-grey: #e4ded8;
+$wenge-brown: #5f574e;
+$dark-charcoal: #302d2c;
+
+// Breakpoints
+$screen-md: 768px;
+$screen-lg: 1024px;
+
+// Media Queries
+@mixin md {
+  @media screen and (min-width: $screen-md) {
+    @content;
+  }
+}
+
+// Font Family
+$young: "Young";
+$outfit: "Outfit";
+
+// Font Face
+@font-face {
+  font-family: $young;
+  src: url(../../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: $outfit;
+  src: url(../../assets/fonts/outfit/static/Outfit-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: $outfit;
+  src: url(../../assets/fonts/outfit/static/Outfit-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: $outfit;
+  src: url(../../assets/fonts/outfit/static/Outfit-Bold.ttf);
+  font-weight: 700;
+}
